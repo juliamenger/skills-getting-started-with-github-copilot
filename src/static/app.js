@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to fetch activities from API
   async function fetchActivities() {
     try {
-      const response = await fetch("/activities");
+      const response = await fetch("/api/activities"); // Corrigido o caminho do endpoint
       const activities = await response.json();
 
       // Clear loading message
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `/activities/${encodeURIComponent(activity)}/signup?email=${encodeURIComponent(email)}`,
+        `/api/activities/${encodeURIComponent(activity)}/signup?email=${encodeURIComponent(email)}`, // Corrigido o caminho do endpoint
         {
           method: "POST",
         }
