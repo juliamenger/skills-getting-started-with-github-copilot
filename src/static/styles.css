@@ -87,6 +87,15 @@ section h3 {
   line-height: 1.5; /* Melhor espaçamento entre linhas */
 }
 
+.participant {
+  background-color: #e3f2fd; /* Light blue background */
+  color: #0d47a1; /* Dark blue text */
+  padding: 10px;
+  border: 1px solid #90caf9; /* Light blue border */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
 .form-group {
   margin-bottom: 15px;
 }
